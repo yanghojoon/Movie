@@ -9,19 +9,30 @@
 /* Begin PBXBuildFile section */
 		DE372B812AA30B7100564E40 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE372B802AA30B7100564E40 /* AppDelegate.swift */; };
 		DE372B832AA30B7100564E40 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE372B822AA30B7100564E40 /* SceneDelegate.swift */; };
-		DE372B852AA30B7100564E40 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE372B842AA30B7100564E40 /* ViewController.swift */; };
 		DE372B8A2AA30B7200564E40 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE372B892AA30B7200564E40 /* Assets.xcassets */; };
 		DE372B8D2AA30B7200564E40 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE372B8B2AA30B7200564E40 /* LaunchScreen.storyboard */; };
+		DE372B9C2AA30E9700564E40 /* AppRootRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE372B982AA30E9700564E40 /* AppRootRouter.swift */; };
+		DE372B9D2AA30E9700564E40 /* RootTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE372B992AA30E9700564E40 /* RootTabBarController.swift */; };
+		DE372B9E2AA30E9700564E40 /* AppRootBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE372B9A2AA30E9700564E40 /* AppRootBuilder.swift */; };
+		DE372B9F2AA30E9700564E40 /* AppRootInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE372B9B2AA30E9700564E40 /* AppRootInteractor.swift */; };
+		DE372BA12AA30F4600564E40 /* AppComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE372BA02AA30F4600564E40 /* AppComponent.swift */; };
+		DE372BA42AA30FAA00564E40 /* ModernRIBs in Frameworks */ = {isa = PBXBuildFile; productRef = DE372BA32AA30FAA00564E40 /* ModernRIBs */; };
+		DE372BA92AA314F800564E40 /* AppRootComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE372BA82AA314F800564E40 /* AppRootComponent.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DE372B7D2AA30B7100564E40 /* Movie+RIBs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Movie+RIBs.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE372B802AA30B7100564E40 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DE372B822AA30B7100564E40 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DE372B842AA30B7100564E40 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DE372B892AA30B7200564E40 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DE372B8C2AA30B7200564E40 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DE372B8E2AA30B7200564E40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE372B982AA30E9700564E40 /* AppRootRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRootRouter.swift; sourceTree = "<group>"; };
+		DE372B992AA30E9700564E40 /* RootTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabBarController.swift; sourceTree = "<group>"; };
+		DE372B9A2AA30E9700564E40 /* AppRootBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRootBuilder.swift; sourceTree = "<group>"; };
+		DE372B9B2AA30E9700564E40 /* AppRootInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRootInteractor.swift; sourceTree = "<group>"; };
+		DE372BA02AA30F4600564E40 /* AppComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppComponent.swift; sourceTree = "<group>"; };
+		DE372BA82AA314F800564E40 /* AppRootComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRootComponent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE372BA42AA30FAA00564E40 /* ModernRIBs in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,14 +66,35 @@
 		DE372B7F2AA30B7100564E40 /* Movie+RIBs */ = {
 			isa = PBXGroup;
 			children = (
-				DE372B802AA30B7100564E40 /* AppDelegate.swift */,
-				DE372B822AA30B7100564E40 /* SceneDelegate.swift */,
-				DE372B842AA30B7100564E40 /* ViewController.swift */,
 				DE372B892AA30B7200564E40 /* Assets.xcassets */,
-				DE372B8B2AA30B7200564E40 /* LaunchScreen.storyboard */,
 				DE372B8E2AA30B7200564E40 /* Info.plist */,
+				DE372B8B2AA30B7200564E40 /* LaunchScreen.storyboard */,
+				DE372B942AA30E1300564E40 /* AppDelegate */,
+				DE372B962AA30E6700564E40 /* AppRoot */,
 			);
 			path = "Movie+RIBs";
+			sourceTree = "<group>";
+		};
+		DE372B942AA30E1300564E40 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				DE372B802AA30B7100564E40 /* AppDelegate.swift */,
+				DE372BA02AA30F4600564E40 /* AppComponent.swift */,
+				DE372B822AA30B7100564E40 /* SceneDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		DE372B962AA30E6700564E40 /* AppRoot */ = {
+			isa = PBXGroup;
+			children = (
+				DE372B982AA30E9700564E40 /* AppRootRouter.swift */,
+				DE372B992AA30E9700564E40 /* RootTabBarController.swift */,
+				DE372B9A2AA30E9700564E40 /* AppRootBuilder.swift */,
+				DE372BA82AA314F800564E40 /* AppRootComponent.swift */,
+				DE372B9B2AA30E9700564E40 /* AppRootInteractor.swift */,
+			);
+			path = AppRoot;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -80,6 +113,9 @@
 			dependencies = (
 			);
 			name = "Movie+RIBs";
+			packageProductDependencies = (
+				DE372BA32AA30FAA00564E40 /* ModernRIBs */,
+			);
 			productName = "Movie+RIBs";
 			productReference = DE372B7D2AA30B7100564E40 /* Movie+RIBs.app */;
 			productType = "com.apple.product-type.application";
@@ -108,6 +144,9 @@
 				Base,
 			);
 			mainGroup = DE372B742AA30B7100564E40;
+			packageReferences = (
+				DE372BA22AA30FA900564E40 /* XCRemoteSwiftPackageReference "ModernRIBs" */,
+			);
 			productRefGroup = DE372B7E2AA30B7100564E40 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -134,9 +173,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE372B852AA30B7100564E40 /* ViewController.swift in Sources */,
+				DE372B9E2AA30E9700564E40 /* AppRootBuilder.swift in Sources */,
+				DE372BA92AA314F800564E40 /* AppRootComponent.swift in Sources */,
 				DE372B812AA30B7100564E40 /* AppDelegate.swift in Sources */,
+				DE372BA12AA30F4600564E40 /* AppComponent.swift in Sources */,
+				DE372B9F2AA30E9700564E40 /* AppRootInteractor.swift in Sources */,
 				DE372B832AA30B7100564E40 /* SceneDelegate.swift in Sources */,
+				DE372B9D2AA30E9700564E40 /* RootTabBarController.swift in Sources */,
+				DE372B9C2AA30E9700564E40 /* AppRootRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,6 +392,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DE372BA22AA30FA900564E40 /* XCRemoteSwiftPackageReference "ModernRIBs" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/DevYeom/ModernRIBs";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DE372BA32AA30FAA00564E40 /* ModernRIBs */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DE372BA22AA30FA900564E40 /* XCRemoteSwiftPackageReference "ModernRIBs" */;
+			productName = ModernRIBs;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DE372B752AA30B7100564E40 /* Project object */;
 }
