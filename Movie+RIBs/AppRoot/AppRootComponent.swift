@@ -17,3 +17,5 @@ final class AppRootComponent: Component<AppRootDependency> {
         super.init(dependency: dependency)
     }
 }
+
+extension AppRootComponent: ListDependency, FavoriteDependency, CommentDependency { }

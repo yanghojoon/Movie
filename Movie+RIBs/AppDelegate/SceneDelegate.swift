@@ -22,7 +22,7 @@ final class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let appRootBuildResult = AppRootBuilder(dependency: AppComponent()).build()
         
         launchRouter = appRootBuildResult.launchRouter
-        launchRouter?.launch(from: window ?? UIWindow(windowScene: windowScene))
+        launchRouter?.launch(from: window ?? UIWindow(windowScene: windowScene)) // LaunchRouting 프로토콜에 lauch 메서드가 선언되어 있음
     }
 
     func sceneDidDisconnect(_ scene: UIScene) { }
@@ -39,3 +39,12 @@ final class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 protocol URLHandler: AnyObject { // 딥링크 같은 것들 처리하는 부분같은데 일단 생성만 해놓음
   func handle(_ url: URL)
 }
+
+// !!!: 이렇게 이미 window를 keyWindow로 만들고 하는 코드가 들어가 있음
+//public final func launch(from window: UIWindow) {
+//    window.rootViewController = viewControllable.uiviewController
+//    window.makeKeyAndVisible()
+//
+//    interactable.activate()
+//    load()
+//}
