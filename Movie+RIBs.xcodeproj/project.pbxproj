@@ -18,6 +18,19 @@
 		DE372BA12AA30F4600564E40 /* AppComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE372BA02AA30F4600564E40 /* AppComponent.swift */; };
 		DE372BA42AA30FAA00564E40 /* ModernRIBs in Frameworks */ = {isa = PBXBuildFile; productRef = DE372BA32AA30FAA00564E40 /* ModernRIBs */; };
 		DE372BA92AA314F800564E40 /* AppRootComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE372BA82AA314F800564E40 /* AppRootComponent.swift */; };
+		DE372BB22AA5EFF300564E40 /* CommentRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE372BAE2AA5EFF300564E40 /* CommentRouter.swift */; };
+		DE372BB32AA5EFF300564E40 /* CommentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE372BAF2AA5EFF300564E40 /* CommentViewController.swift */; };
+		DE372BB42AA5EFF300564E40 /* CommentBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE372BB02AA5EFF300564E40 /* CommentBuilder.swift */; };
+		DE372BB52AA5EFF300564E40 /* CommentInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE372BB12AA5EFF300564E40 /* CommentInteractor.swift */; };
+		DE372BBA2AA5F00500564E40 /* FavoriteRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE372BB62AA5F00500564E40 /* FavoriteRouter.swift */; };
+		DE372BBB2AA5F00500564E40 /* FavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE372BB72AA5F00500564E40 /* FavoriteViewController.swift */; };
+		DE372BBC2AA5F00500564E40 /* FavoriteBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE372BB82AA5F00500564E40 /* FavoriteBuilder.swift */; };
+		DE372BBD2AA5F00500564E40 /* FavoriteInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE372BB92AA5F00500564E40 /* FavoriteInteractor.swift */; };
+		DE372BC22AA5F01900564E40 /* ListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE372BBE2AA5F01900564E40 /* ListRouter.swift */; };
+		DE372BC32AA5F01900564E40 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE372BBF2AA5F01900564E40 /* ListViewController.swift */; };
+		DE372BC42AA5F01900564E40 /* ListBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE372BC02AA5F01900564E40 /* ListBuilder.swift */; };
+		DE372BC52AA5F01900564E40 /* ListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE372BC12AA5F01900564E40 /* ListInteractor.swift */; };
+		DE372BC82AA5F3D900564E40 /* NavigationControllable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE372BC72AA5F3D900564E40 /* NavigationControllable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +46,19 @@
 		DE372B9B2AA30E9700564E40 /* AppRootInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRootInteractor.swift; sourceTree = "<group>"; };
 		DE372BA02AA30F4600564E40 /* AppComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppComponent.swift; sourceTree = "<group>"; };
 		DE372BA82AA314F800564E40 /* AppRootComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRootComponent.swift; sourceTree = "<group>"; };
+		DE372BAE2AA5EFF300564E40 /* CommentRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentRouter.swift; sourceTree = "<group>"; };
+		DE372BAF2AA5EFF300564E40 /* CommentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentViewController.swift; sourceTree = "<group>"; };
+		DE372BB02AA5EFF300564E40 /* CommentBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentBuilder.swift; sourceTree = "<group>"; };
+		DE372BB12AA5EFF300564E40 /* CommentInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentInteractor.swift; sourceTree = "<group>"; };
+		DE372BB62AA5F00500564E40 /* FavoriteRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteRouter.swift; sourceTree = "<group>"; };
+		DE372BB72AA5F00500564E40 /* FavoriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewController.swift; sourceTree = "<group>"; };
+		DE372BB82AA5F00500564E40 /* FavoriteBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteBuilder.swift; sourceTree = "<group>"; };
+		DE372BB92AA5F00500564E40 /* FavoriteInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteInteractor.swift; sourceTree = "<group>"; };
+		DE372BBE2AA5F01900564E40 /* ListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRouter.swift; sourceTree = "<group>"; };
+		DE372BBF2AA5F01900564E40 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		DE372BC02AA5F01900564E40 /* ListBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListBuilder.swift; sourceTree = "<group>"; };
+		DE372BC12AA5F01900564E40 /* ListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListInteractor.swift; sourceTree = "<group>"; };
+		DE372BC72AA5F3D900564E40 /* NavigationControllable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationControllable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,7 +96,11 @@
 				DE372B8E2AA30B7200564E40 /* Info.plist */,
 				DE372B8B2AA30B7200564E40 /* LaunchScreen.storyboard */,
 				DE372B942AA30E1300564E40 /* AppDelegate */,
+				DE372BC62AA5F3C900564E40 /* Utils */,
 				DE372B962AA30E6700564E40 /* AppRoot */,
+				DE372BAC2AA5EFC400564E40 /* Comment */,
+				DE372BAB2AA5EFA300564E40 /* Favorite */,
+				DE372BAA2AA5EF5700564E40 /* List */,
 			);
 			path = "Movie+RIBs";
 			sourceTree = "<group>";
@@ -95,6 +125,47 @@
 				DE372B9B2AA30E9700564E40 /* AppRootInteractor.swift */,
 			);
 			path = AppRoot;
+			sourceTree = "<group>";
+		};
+		DE372BAA2AA5EF5700564E40 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				DE372BBE2AA5F01900564E40 /* ListRouter.swift */,
+				DE372BBF2AA5F01900564E40 /* ListViewController.swift */,
+				DE372BC02AA5F01900564E40 /* ListBuilder.swift */,
+				DE372BC12AA5F01900564E40 /* ListInteractor.swift */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		DE372BAB2AA5EFA300564E40 /* Favorite */ = {
+			isa = PBXGroup;
+			children = (
+				DE372BB62AA5F00500564E40 /* FavoriteRouter.swift */,
+				DE372BB72AA5F00500564E40 /* FavoriteViewController.swift */,
+				DE372BB82AA5F00500564E40 /* FavoriteBuilder.swift */,
+				DE372BB92AA5F00500564E40 /* FavoriteInteractor.swift */,
+			);
+			path = Favorite;
+			sourceTree = "<group>";
+		};
+		DE372BAC2AA5EFC400564E40 /* Comment */ = {
+			isa = PBXGroup;
+			children = (
+				DE372BAE2AA5EFF300564E40 /* CommentRouter.swift */,
+				DE372BAF2AA5EFF300564E40 /* CommentViewController.swift */,
+				DE372BB02AA5EFF300564E40 /* CommentBuilder.swift */,
+				DE372BB12AA5EFF300564E40 /* CommentInteractor.swift */,
+			);
+			path = Comment;
+			sourceTree = "<group>";
+		};
+		DE372BC62AA5F3C900564E40 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				DE372BC72AA5F3D900564E40 /* NavigationControllable.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -173,13 +244,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE372BBC2AA5F00500564E40 /* FavoriteBuilder.swift in Sources */,
+				DE372BC22AA5F01900564E40 /* ListRouter.swift in Sources */,
+				DE372BC42AA5F01900564E40 /* ListBuilder.swift in Sources */,
+				DE372BB32AA5EFF300564E40 /* CommentViewController.swift in Sources */,
+				DE372BB42AA5EFF300564E40 /* CommentBuilder.swift in Sources */,
 				DE372B9E2AA30E9700564E40 /* AppRootBuilder.swift in Sources */,
+				DE372BB22AA5EFF300564E40 /* CommentRouter.swift in Sources */,
+				DE372BBA2AA5F00500564E40 /* FavoriteRouter.swift in Sources */,
+				DE372BB52AA5EFF300564E40 /* CommentInteractor.swift in Sources */,
+				DE372BC82AA5F3D900564E40 /* NavigationControllable.swift in Sources */,
 				DE372BA92AA314F800564E40 /* AppRootComponent.swift in Sources */,
+				DE372BC52AA5F01900564E40 /* ListInteractor.swift in Sources */,
 				DE372B812AA30B7100564E40 /* AppDelegate.swift in Sources */,
 				DE372BA12AA30F4600564E40 /* AppComponent.swift in Sources */,
 				DE372B9F2AA30E9700564E40 /* AppRootInteractor.swift in Sources */,
+				DE372BBB2AA5F00500564E40 /* FavoriteViewController.swift in Sources */,
 				DE372B832AA30B7100564E40 /* SceneDelegate.swift in Sources */,
+				DE372BC32AA5F01900564E40 /* ListViewController.swift in Sources */,
 				DE372B9D2AA30E9700564E40 /* RootTabBarController.swift in Sources */,
+				DE372BBD2AA5F00500564E40 /* FavoriteInteractor.swift in Sources */,
 				DE372B9C2AA30E9700564E40 /* AppRootRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

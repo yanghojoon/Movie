@@ -10,7 +10,6 @@ import ModernRIBs
 protocol AppRootDependency: Dependency { }
 
 // MARK: - Builder
-
 protocol AppRootBuildable: Buildable {
     func build() -> (launchRouter: LaunchRouting, interactable: AppRootInteractable)
 }
@@ -20,13 +19,22 @@ final class AppRootBuilder: Builder<AppRootDependency>, AppRootBuildable {
         super.init(dependency: dependency)
     }
 
-
     func build() -> (launchRouter: LaunchRouting, interactable: AppRootInteractable) {
         let tabBar = RootTabBarController()
         let component = AppRootComponent(dependency: dependency, rootViewController: tabBar) // dependency는 Builder에서 애초에 가지고 있음
-        
+
         let interactor = AppRootInteractor(presenter: tabBar)
-        let router = AppRootRouter(interactor: interactor, viewController: tabBar)
+
+        let listBuilder = ListBuilder(dependency: component)
+        let favoriteBuilder = FavoriteBuilder(dependency: component)
+        let commentBuilder = CommentBuilder(dependency: component)
+        let router = AppRootRouter(
+            interactor: interactor,
+            viewController: tabBar,
+            list: listBuilder,
+            favorite: favoriteBuilder,
+            comment: commentBuilder
+        )
         
         return (router, interactor)
     }
