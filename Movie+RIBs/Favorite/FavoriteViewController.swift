@@ -15,6 +15,26 @@ protocol FavoritePresentableListener: AnyObject {
 }
 
 final class FavoriteViewController: UIViewController, FavoritePresentable, FavoriteViewControllable {
-
     weak var listener: FavoritePresentableListener?
+
+    init() {
+        super.init(nibName: nil, bundle: nil)
+
+        setupViews()
+    }
+
+    @available(*, unavailable)
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+
+    func setupViews() {
+        tabBarItem = UITabBarItem(
+            title: "Favorite",
+            image: UIImage(systemName: "star"),
+            selectedImage: UIImage(systemName: "star.fill")
+        )
+
+        view.backgroundColor = .systemRed
+    }
 }

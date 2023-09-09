@@ -15,6 +15,26 @@ protocol CommentPresentableListener: AnyObject {
 }
 
 final class CommentViewController: UIViewController, CommentPresentable, CommentViewControllable {
-
     weak var listener: CommentPresentableListener?
+
+    init() {
+        super.init(nibName: nil, bundle: nil)
+
+        setupViews()
+    }
+
+    @available(*, unavailable)
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+
+    func setupViews() {
+        tabBarItem = UITabBarItem(
+            title: "Comment",
+            image: UIImage(systemName: "message"),
+            selectedImage: UIImage(systemName: "message.fill")
+        )
+
+        view.backgroundColor = .systemGreen
+    }
 }
