@@ -17,9 +17,9 @@ protocol AppRootViewControllable: ViewControllable {
 }
 
 final class AppRootRouter: LaunchRouter<AppRootInteractable, AppRootViewControllable>, AppRootRouting { // 처음 시작하는 Router는 LaunchRouter를 붙여야 함
-    private let list: ListBuildable
-    private let favorite: FavoriteBuildable
-    private let comment: CommentBuildable
+    private let listHome: ListBuildable
+    private let favoriteHome: FavoriteBuildable
+    private let commentHome: CommentBuildable
 
     private var listRouting: ViewableRouting?
     private var favoriteRouting: ViewableRouting?
@@ -32,18 +32,18 @@ final class AppRootRouter: LaunchRouter<AppRootInteractable, AppRootViewControll
         favorite: FavoriteBuildable,
         comment: CommentBuildable
     ) {
-        self.list = list
-        self.favorite = favorite
-        self.comment = comment
+        self.listHome = list
+        self.favoriteHome = favorite
+        self.commentHome = comment
         
         super.init(interactor: interactor, viewController: viewController)
         interactor.router = self
     }
 
     func attachTabs() {
-        let listRouting = list.build(withListener: interactor)
-        let favoriteRouting = favorite.build(withListener: interactor)
-        let commentRouting = comment.build(withListener: interactor)
+        let listRouting = listHome.build(withListener: interactor)
+        let favoriteRouting = favoriteHome.build(withListener: interactor)
+        let commentRouting = commentHome.build(withListener: interactor)
 
         attachChilds([
             listRouting,
